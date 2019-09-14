@@ -1,0 +1,23 @@
+.header
+ .header__box
+  .header__box__title
+   Household account book
+ .header__menu
+  .header__menu__home
+   = link_to root_path do
+    = fa_icon "home"
+    Home
+  .header__menu__blog
+   = link_to root_path do
+    = fa_icon "book-open"
+    Blog
+  .header__menu__spend
+   = link_to spendings_path do
+    = fa_icon "shopping-cart"
+    Spend
+  .header__menu__income
+   = link_to root_path do
+    = fa_icon "wallet"
+    Income
+ 
+  

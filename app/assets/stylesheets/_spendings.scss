@@ -1,0 +1,149 @@
+.title{
+  height: 50px;
+  width: 170px;
+  text-align: center;
+  margin: auto;
+  margin-top: 15px;
+  font-size: 35px;
+  font-family: 'Monda', sans-serif;
+  font-weight: bold;
+  display: flex;
+  &__icon{
+    margin-left: 7px;
+    margin-top: 2px;
+  }
+}
+.spending{
+  height: 300px;
+  width: 95%;
+  background-color: white;
+  margin: auto;
+  margin-top: 20px;
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+  line-height: 77px;
+  &__box1{
+    height: 25%;
+    width: 100%;
+    display: flex;
+    &__speces1{
+      height: 100%;
+      width: 25%;
+      background-color: white;
+    }
+    &__speces2{
+      height: 100%;
+      width: 25%;
+      background-color: gray;
+    }
+    &__speces3{
+      height: 100%;
+      width: 25%;
+      background-color: white;
+    }
+    &__speces4{
+      height: 100%;
+      width: 25%;
+      background-color: gray;
+    }
+  }
+  &__box2{
+    height: 25%;
+    width: 100%;
+    display: flex;
+    &__speces1{
+      height: 100%;
+      width: 25%;
+      background-color: gray;
+    }
+    &__speces2{
+      height: 100%;
+      width: 25%;
+      background-color: white;
+    }
+    &__speces3{
+      height: 100%;
+      width: 25%;
+      background-color: gray;
+    }
+    &__speces4{
+      height: 100%;
+      width: 25%;
+      background-color: white;
+    }
+  }
+  &__box3{
+    height: 25%;
+    width: 100%;
+    display: flex;
+    &__speces1{
+      height: 100%;
+      width: 25%;
+      background-color: white;
+    }
+    &__speces2{
+      height: 100%;
+      width: 25%;
+      background-color: gray;
+    }
+    &__speces3{
+      height: 100%;
+      width: 25%;
+      background-color: white;
+    }
+    &__speces4{
+      height: 100%;
+      width: 25%;
+      background-color: gray;
+    }
+  }
+  &__box4{
+    height: 25%;
+    width: 100%;
+    display: flex;
+    &__speces1{
+      height: 100%;
+      width: 25%;
+      background-color: gray;
+    }
+    &__speces2{
+      height: 100%;
+      width: 25%;
+      background-color: white;
+    }
+    &__speces3{
+      height: 100%;
+      width: 25%;
+      background-color: gray;
+    }
+    &__speces4{
+      height: 100%;
+      width: 25%;
+      background-color: white;
+    }
+  }
+}
+.select{
+  height: 50px;
+  width: 100px;
+  background-color: white;
+  margin-top: 25px;
+  margin-left: 36px;
+}
+.text_box{
+  height: 50px;
+  width: 80%;
+  background-color: white;
+  margin: auto;
+  margin-top: 30px;
+  
+}
+.button{
+  border: solid 1px black;
+  height: 50px;
+  width: 90px;
+  float: right;
+  margin-top: 40px;
+  margin-right: 40px;
+}

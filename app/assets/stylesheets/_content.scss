@@ -1,0 +1,145 @@
+.content{
+  height: 687px;
+  width: 100vw;
+  background-image: url("/images/f2242df28114ca0770282ad502cba384_t.jpeg");
+  background-size: cover;
+  &__side{
+    float: left;
+    height: 687px;
+    width: 10%;
+    &__user{
+      border-radius: 50%;
+     height: 110px;
+     width: 110px;
+     position: relative;
+     margin: auto;
+     top: 30px;
+     text-align: center;
+     font-size: 26px;
+     line-height: 55px;
+     background-color: #a7a7a7;
+     font-family: 'Monda', sans-serif;
+     a{
+       color: white;
+       font-weight: bold;
+     }
+     i{
+      font-size: 45px;
+    }
+    }
+    &__total{
+     border-radius: 50%;
+     height: 110px;
+     width: 110px;
+     position: relative;
+     margin: auto;
+     top: 55px;
+     text-align: center;
+     font-size: 26px;
+     line-height: 55px;
+     background-color: #a7a7a7;
+     font-family: 'Monda', sans-serif;
+     a{
+       color: white;
+       font-weight: bold;
+     }
+     i{
+      font-size: 45px;
+    }
+    }
+    &__comment{
+     border-radius: 50%;
+     height: 110px;
+     width: 110px;
+     position: relative;
+     margin: auto;
+     top: 80px;
+     text-align: center;
+     font-size: 26px;
+     line-height: 55px;
+     background-color: #a7a7a7;
+     font-family: 'Monda', sans-serif;
+     a{
+       color: white;
+       font-weight: bold;
+     }
+     i{
+      font-size: 45px;
+    }
+    }
+    &__calender{
+     border-radius: 50%;
+     height: 110px;
+     width: 110px;
+     position: relative;
+     margin: auto;
+     top: 105px;
+     text-align: center;
+     font-size: 19px;
+     line-height: 55px;
+     background-color: #a7a7a7;
+     font-family: 'Monda', sans-serif;
+     a{
+       color: white;
+       font-weight: bold;
+     }
+     i{
+       font-size: 45px;
+     }
+    }
+  }
+  &__box{
+    height: 583px;
+    position: relative;
+    width: 80%;
+    background-color: #9668006b;
+    overflow: scroll;
+    padding-bottom: 104px;
+    &__date{
+     text-align: center;
+     font-size: 40px;
+     font-weight: bold;
+     padding-top: 15px;
+     font-family: 'Monda', sans-serif;
+    }
+   &__spend{
+    font-size: 30px;
+    margin-left: 50px;
+    margin-top: 60px;
+   }
+   &__speces1{
+    border: solid 1px black;
+    height: 400px;
+    width: 90%;
+    margin: auto;
+    overflow: scroll;
+    background-color: white;
+   }
+   &__income{
+    font-size: 30px;
+    margin-left: 50px;
+    margin-top: 60px;
+   }
+   &__speces2{
+    border: solid 1px black;
+    height: 400px;
+    width: 90%;
+    margin: auto;
+    overflow: scroll;
+    background-color: white;
+   }
+  }
+}
+
+#comment_user{
+  margin-left: 62px;
+  margin-top: 15px;
+}
+
+.memo-title{
+  font-weight: bold;
+  font-size: 35px;
+  text-align: center;
+  margin-top: 25px;
+  font-family: 'Monda', sans-serif;
+}

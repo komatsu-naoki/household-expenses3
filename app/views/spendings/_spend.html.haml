@@ -1,0 +1,69 @@
+.content
+ .content__side
+  .content__side__user
+   = link_to edit_user_path(current_user) do
+    edit
+    %br
+    = fa_icon "user"
+  .content__side__total
+   = link_to root_path do
+    Total
+    %br
+    = fa_icon "coins"
+  .content__side__comment
+   = link_to root_path do
+    Memo
+    %br
+    = fa_icon "pen"
+  .content__side__calender
+   = link_to root_path do
+    Calender
+    %br
+    = fa_icon "calendar-week"
+ .content__box
+  .title
+   Spending
+   .title__icon
+    = fa_icon "shopping-cart"
+  .spending
+   .spending__box1
+    .spending__box1__speces1
+     食費
+    .spending__box1__speces2
+     日用品
+    .spending__box1__speces3
+     交通費
+    .spending__box1__speces4
+     本・雑誌
+   .spending__box2
+    .spending__box2__speces1
+     携帯電話
+    .spending__box2__speces2
+     インターネット
+    .spending__box2__speces3
+     病院
+    .spending__box2__speces4
+     水道代
+   .spending__box3
+    .spending__box3__speces1
+     ガス代
+    .spending__box3__speces2
+     電気代
+    .spending__box3__speces3
+     家賃
+    .spending__box3__speces4
+     衣類
+   .spending__box4
+    .spending__box4__speces1
+     娯楽費
+    .spending__box4__speces2
+     保険
+    .spending__box4__speces3
+     カード払い
+    .spending__box4__speces4
+     その他
+  .select
+   選択した種類の表示
+   = form_for @spendings do |f|
+    = f.text_field :value, size: :"10", class: :text_box
+    = f.submit "登録", :class => "send"
