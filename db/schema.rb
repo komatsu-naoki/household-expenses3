@@ -10,13 +10,22 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20190915133226) do
+ActiveRecord::Schema.define(version: 20190916083619) do
 
   create_table "foods", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.integer  "name_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["name_id"], name: "index_foods_on_name_id", using: :btree
+  end
+
+  create_table "homes", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.integer  "user_id"
+    t.integer  "spending_id"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+    t.index ["spending_id"], name: "index_homes_on_spending_id", using: :btree
+    t.index ["user_id"], name: "index_homes_on_user_id", using: :btree
   end
 
   create_table "incomes", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
@@ -55,6 +64,8 @@ ActiveRecord::Schema.define(version: 20190915133226) do
   end
 
   add_foreign_key "foods", "spendings", column: "name_id"
+  add_foreign_key "homes", "spendings"
+  add_foreign_key "homes", "users"
   add_foreign_key "money", "spendings"
   add_foreign_key "money", "users"
   add_foreign_key "spendings", "users"

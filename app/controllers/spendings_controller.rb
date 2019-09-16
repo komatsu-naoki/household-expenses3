@@ -12,6 +12,7 @@ class SpendingsController < ApplicationController
     
     @spending = Spending.new(spending_params)
     @spending.users << current_user
+    
 
     if @spending.save
       redirect_to root_path
