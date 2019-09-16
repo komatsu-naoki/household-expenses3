@@ -27,13 +27,19 @@
    本日の支出
   .content__box__speces1
    .content__box__speces1__one
-    - current_user.spendings.first(1).each do |spending|
-     - if spending.name == "食費" && Date.today <= spending.created_at && spending.created_at < Date.today + 1 
-      = spending.name
-      = Spending.sumvalue.to_i 
-      円
-      %br
-  .content__box__income
-   本日の収入
-  .content__box__speces2
+    = @name
+    = @sum1
+    = @sum2
+   %br
+
+  -#     .content__box__speces1__two
+  -#   - current_user.spendings.each do |spending|
+  -#    - if spending.name == "日用品" && Date.today <= spending.created_at && spending.created_at < Date.today + 1 
+  -#     = spending.name
+  -#     = Spending.sumdailynecessities.to_i 
+  -#     円
+  -#     %br
+  -# .content__box__income
+  -#  本日の収入
+  -# .content__box__speces2
   
