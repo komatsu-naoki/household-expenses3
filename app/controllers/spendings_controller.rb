@@ -1,7 +1,7 @@
 class SpendingsController < ApplicationController
 
   def index
-    
+    @spending = Spending.new
   end
 
   def new
