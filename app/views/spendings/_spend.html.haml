@@ -69,6 +69,6 @@
     = f.select :name, [["食費"],["日用品"],["交通費"],["本・雑誌"],["携帯電話"],["インターネット"],["医療費"],["水道代"],["ガス代"],["電気代"],["家賃"],["衣類"],["娯楽費"],["保険"],["カード払い"],["その他"]]
     .value__box
      支出を入力してください
-    = f.number_field :value, size: :"10", class: :text_box
+    = f.number_field :value, size: :"10", min:1, class: :text_box
     = f.submit "追加", :class => "send"
     
