@@ -2,15 +2,16 @@
   &__box{
     height: 60px;
     width: 100%;
-    background-color: #1d1b1bbf;
+    background-image: url("/images/photo0000-0331.jpg");
+    background-image: url("/images/stone_00081.jpg");
     &__title{
       width: inherit;
       height: 30px;
       position: absolute;
       font-family: 'Lobster', cursive;
       text-align: center;
-      line-height: 65px;
-      font-size: 35px;
+      line-height: 60px;
+      font-size: 40px;
       color: white;
     }
   }
@@ -18,7 +19,7 @@
     display: flex;
     height: 50px;
     width: 100vw;
-    background-color: #80808073;
+    background-image: url("/images/photo0000-0331.jpg");
     &__home{
       height: 50px;
       width: inherit;
@@ -29,18 +30,20 @@
       line-height: 46px;
       font-size: 30px;
       font-family: 'Monda', sans-serif;
+      
+      
     }
-    &__blog{
-      height: 50px;
-      width: inherit;
-      background-color: #80808073;
-      box-shadow:0px 0px 5px 3px rgba(0, 0, 0, 0.2) inset;
-      border:1px solid #000;
-      font-family: 'Monda', sans-serif;
-      text-align: center;
-      line-height: 46px;
-      font-size: 30px;
-    }
+    // &__blog{
+    //   height: 50px;
+    //   width: inherit;
+    //   background-color: #80808073;
+    //   box-shadow:0px 0px 5px 3px rgba(0, 0, 0, 0.2) inset;
+    //   border:1px solid #000;
+    //   font-family: 'Monda', sans-serif;
+    //   text-align: center;
+    //   line-height: 46px;
+    //   font-size: 30px;
+    // }
     &__spend{
       height: 50px;
       width: inherit;

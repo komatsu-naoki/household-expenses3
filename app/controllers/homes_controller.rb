@@ -147,6 +147,19 @@ class HomesController < ApplicationController
        @clothingname = spending_sum.name 
       end
      end
+
+
+     @hair0 = Spending.where(name: "美容院").where(created_at: @range).where(user_id: current_user.id)
+     @hair3 = 0
+     
+     @hair0.each do |spending_sum|
+      if @hair0 
+       @hair3 += spending_sum.value.to_i
+       @hair1 = @hair3 
+       @hair2 = "円"
+       @hairname = spending_sum.name 
+      end
+     end
  
      @Entertainment0 = Spending.where(name: "娯楽費").where(created_at: @range).where(user_id: current_user.id)
      @Entertainment3 = 0

@@ -4,5 +4,6 @@ class Spending < ApplicationRecord
   has_many :homes
 
   validates :value, presence: true
+  validates :name, presence: true
 
 end

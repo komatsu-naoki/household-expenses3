@@ -4,5 +4,6 @@ Rails.application.routes.draw do
   resources :homes
   resources :users
   resources :spendings 
+  resources :moneys
 
 end

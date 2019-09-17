@@ -6,20 +6,20 @@
     %br
     = fa_icon "user"
   .content__side__total
-   = link_to root_path do
+   = link_to moneys_path do
     Total
     %br
     = fa_icon "coins"
-  .content__side__comment
-   = link_to root_path do
-    Memo
-    %br
-    = fa_icon "pen"
-  .content__side__calender
-   = link_to root_path do
-    Calender
-    %br
-    = fa_icon "calendar-week"
+  -# .content__side__calender
+  -#  = link_to root_path do
+  -#   Calender
+  -#   %br
+  -#   = fa_icon "calendar-week"
+  -# .content__side__comment
+  -#  = link_to root_path do
+  -#   Memo
+  -#   %br
+  -#   = fa_icon "pen"
  .content__box
   .content__box__date
    = Date.current.to_s(:ymd)
@@ -30,82 +30,87 @@
     = @foodname
     = @food1
     = @food2
-   %br
+    
    .content__box__speces1__two
     = @dailynecessitiesname
     = @dailynecessities1
     = @dailynecessities2
-   %br
+    
    .content__box__speces1__three
     = @texname
     = @tex1
     = @tex2
-   %br
+    
    .content__box__speces1__four
     = @bookname
     = @book1
     = @book2
-   %br
+    
    .content__box__speces1__five
     = @cellname
     = @cell1
     = @cell2
-   %br
+    
    .content__box__speces1__six
     = @internetname
     = @internet1
     = @internet2
-   %br
+    
    .content__box__speces1__seven
     = @Medicalname
     = @Medical1
     = @Medical2
-   %br
+    
    .content__box__speces1__eight
     = @watername
     = @water1
     = @water2
-   %br
+    
    .content__box__speces1__nine
     = @gasname
     = @gas1
     = @gas2
-   %br
+    
    .content__box__speces1__ten
     = @Electricalname
     = @Electrical1
     = @Electrical2
-   %br
+    
    .content__box__speces1__eleven
     = @rentname
     = @rent1
     = @rent2
-   %br
+    
    .content__box__speces1__twelve
     = @clothingname
     = @clothing1
     = @clothing2
-   %br
-   .content__box__speces1__thirteen
+
+    .content__box__speces1__thirteen
+    = @hairname
+    = @hair1
+    = @hair2
+    
+   .content__box__speces1__fourteen
     = @Entertainmentname
     = @Entertainment1
     = @Entertainment2
-   %br
-   .content__box__speces1__fourteen
+    
+   .content__box__speces1__fifteen
     = @insurancename
     = @insurance1
     = @insurance2
-   %br
-   .content__box__speces1__fifteen
+    
+   .content__box__speces1__sixteen
     = @cardname
     = @card1
     = @card2
-   %br
-   .content__box__speces1__sixteen
+    
+   .content__box__speces1__seventeen
     = @othername
     = @other1
     = @other2
-   %br
+    
   .content__box__income
    本日の収入
   .content__box__speces2

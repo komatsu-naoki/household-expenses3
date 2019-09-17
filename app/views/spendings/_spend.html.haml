@@ -6,23 +6,14 @@
     %br
     = fa_icon "user"
   .content__side__total
-   = link_to root_path do
+   = link_to moneys_path do
     Total
     %br
     = fa_icon "coins"
-  .content__side__comment
-   = link_to root_path do
-    Memo
-    %br
-    = fa_icon "pen"
-  .content__side__calender
-   = link_to root_path do
-    Calender
-    %br
-    = fa_icon "calendar-week"
  .content__box
   .title
-   Spending
+   .title__name
+    Spending
    .title__icon
     = fa_icon "shopping-cart"
   -# .spending
@@ -65,10 +56,10 @@
   .form
    = form_for @spending do |f|
     .speces
-     選択してください
-    = f.select :name, [["食費"],["日用品"],["交通費"],["本・雑誌"],["携帯電話"],["インターネット"],["医療費"],["水道代"],["ガス代"],["電気代"],["家賃"],["衣類"],["娯楽費"],["保険"],["カード払い"],["その他"]]
+    -#  選択してください
+    = f.select :name, [["食費"],["日用品"],["交通費"],["本・雑誌"],["携帯電話"],["インターネット"],["医療費"],["水道代"],["ガス代"],["電気代"],["家賃"],["衣類"],["美容院"],["娯楽費"],["保険"],["カード払い"],["その他"]], :prompt => "選択してください"
     .value__box
-     支出を入力してください
-    = f.number_field :value, size: :"10", min:1, class: :text_box
+    -#  支出を入力してください
+    = f.number_field :value, size: :"10", min:1, class: :text_box, placeholder: "支出を入力してください"
     = f.submit "追加", :class => "send"
     
