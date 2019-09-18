@@ -1,0 +1,22 @@
+.content
+ .content__side
+  .content__side__user
+   = link_to edit_user_path(current_user) do
+    edit
+    %br
+    = fa_icon "user"
+  .content__side__total
+   = link_to moneys_path do
+    Total
+    %br
+    = fa_icon "coins"
+ .content__box
+  .form
+   = form_for @income do |f|
+    .speces
+    = f.select :name, [["食費"],["日用品"],["交通費"],["本・雑誌"],["携帯電話"],["インターネット"],["医療費"],["水道代"],["ガス代"],["電気代"],["家賃"],["衣類"],["美容院"],["娯楽費"],["保険"],["カード払い"],["その他"],["収入"]], :prompt => "選択してください"
+    .value__box
+    = f.number_field :value, size: :"10", min:1, class: :text_box, placeholder: "残高または収入を入力してください"
+    = f.submit "追加", :class => "send"
+
+   

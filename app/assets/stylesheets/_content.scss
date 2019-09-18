@@ -103,8 +103,8 @@
      font-family: 'Noto Serif JP', serif;
     }
    &__spend{
-    font-size: 30px;
-    margin-left: 50px;
+    font-size: 70px;
+    text-align: center;
     margin-top: 60px;
    }
    &__speces1{
@@ -116,18 +116,37 @@
     background-color: white;
    }
    &__income{
-    font-size: 30px;
-    margin-left: 50px;
     margin-top: 60px;
+    display: flex;
+   &__in{
+    font-size: 50px;
+    margin-left: 190px;
+    
    }
+   &__ba{
+    font-size: 50px;
+    margin-left: 360px;
+   }
+  }
    &__speces2{
+     display: flex;
+   &__income{
     border: solid 1px black;
     height: 400px;
-    width: 90%;
-    margin: auto;
+    width: 43%;
+    margin-left: 55px;
     overflow: scroll;
     background-color: white;
    }
+   &__balance{
+    border: solid 1px black;
+    height: 400px;
+    width: 43%;
+    margin-left: 45px;
+    overflow: scroll;
+    background-color: white;
+   }
+  }
   }
 }
 

@@ -16,13 +16,23 @@
 .content__box__total{
   margin-top: 30px;
   &__title1{
-  font-size: 50px;
+  font-size: 33px;
   text-align: center;
+  margin: auto;
+  border: solid 1px black;
+  height: 100px;
+  line-height: 100px;
+  width: 70vw;
+  margin-bottom: 30px; 
+  background-image: url("/images/450-20130118184438164712.jpg");
+  -webkit-text-stroke: 2px black;
+  color: white;
+  font-weight: bold;
   }
   &__spend{
   background-color: white;
   height: 60vh;
-  width: 50vw;
+  width: 60vw;
   margin: auto;
   font-size: 40px;
   overflow: scroll;
@@ -113,13 +123,24 @@
        }
   }
   &__title2{
-  font-size: 50px;
-  text-align: center;
+    font-size: 33px;
+    text-align: center;
+    margin: auto;
+    border: solid 1px black;
+    height: 100px;
+    line-height: 100px;
+    width: 70vw;
+    margin-bottom: 30px; 
+    background-image: url("/images/450-20130118184438164712.jpg");
+    -webkit-text-stroke: 2px black;
+    color: white;
+    font-weight: bold;
+    margin-top: 30px;
   }
   &__income{
     background-color: white;
     height: 60vh;
-    width: 50vw;
+    width: 60vw;
     margin: auto;
     }
 }

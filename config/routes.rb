@@ -5,5 +5,6 @@ Rails.application.routes.draw do
   resources :users
   resources :spendings 
   resources :moneys
+  resources :incomes
 
 end

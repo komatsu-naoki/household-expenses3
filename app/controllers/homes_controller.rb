@@ -208,6 +208,219 @@ class HomesController < ApplicationController
        @othername = spending_sum.name 
       end
      end
+
+
+
+
+
+
+     @range = Date.today.beginning_of_day..Date.today.end_of_day
+     
+     @food4 = Income.where(name: "食費").where(created_at: @range).where(user_id: current_user.id)
+     @food7 = 0
+     
+     @food4.each do |income_sum|
+      if @food4 
+       @food7 += income_sum.value.to_i
+       @food5 = @food7
+       @food6 = "円"
+       @foodname1 = income_sum.name 
+      end
+     end
+ 
+     @dailynecessities4 = Income.where(name: "日用品").where(created_at: @range).where(user_id: current_user.id)
+     @dailynecessities7 = 0
+     
+     @dailynecessities4.each do |income_sum|
+      if @dailynecessities4 
+       @dailynecessities7 += income_sum.value.to_i
+       @dailynecessities5 = @dailynecessities7
+       @dailynecessities6 = "円"
+       @dailynecessitiesname1 = income_sum.name 
+      end
+     end
+ 
+     @tex4 = Income.where(name: "交通費").where(created_at: @range).where(user_id: current_user.id)
+     @tex7 = 0
+     
+     @tex4.each do |income_sum|
+      if @tex4 
+       @tex7 += income_sum.value.to_i
+       @tex5 = @tex7
+       @tex6 = "円"
+       @texname1 = income_sum.name
+      end
+     end
+ 
+     @book4 = Income.where(name: "本・雑誌").where(created_at: @range).where(user_id: current_user.id)
+     @book7 = 0
+     
+     @book4.each do |income_sum|
+      if @tex4 
+       @book7 += income_sum.value.to_i
+       @book5 = @book7
+       @book6 = "円"
+       @bookname1 = income_sum.name 
+      end
+     end
+ 
+     @cell4 = Income.where(name: "携帯電話").where(created_at: @range).where(user_id: current_user.id)
+     @cell7 = 0
+     
+     @cell4.each do |income_sum|
+      if @cell4 
+       @cell7 += income_sum.value.to_i
+       @cell5 = @cell7
+       @cell6 = "円"
+       @cellname1 = income_sum.name 
+      end
+     end
+ 
+     @internet4 = Income.where(name: "インターネット").where(created_at: @range).where(user_id: current_user.id)
+     @internet7 = 0
+     
+     @internet4.each do |income_sum|
+      if @internet4 
+       @internet7 += income_sum.value.to_i
+       @internet5 = @internet7
+       @internet6 = "円"
+       @internetname1 = income_sum.name 
+      end
+     end
+ 
+     @Medical4 = Income.where(name: "医療費").where(created_at: @range).where(user_id: current_user.id)
+     @Medical7 = 0
+     
+     @Medical4.each do |income_sum|
+      if @Medical4 
+       @Medical7 += income_sum.value.to_i
+       @Medical5 = @Medical7 
+       @Medical6 = "円"
+       @Medicalname1 = income_sum.name 
+      end
+     end
+ 
+     @water4 = Income.where(name: "水道代").where(created_at: @range).where(user_id: current_user.id)
+     @water7 = 0
+     
+     @water4.each do |income_sum|
+      if @water4 
+       @water7 += income_sum.value.to_i
+       @water5 = @water7
+       @water6 = "円"
+       @watername1 = income_sum.name
+      end
+     end
+ 
+     @gas4 = Income.where(name: "ガス代").where(created_at: @range).where(user_id: current_user.id)
+     @gas7 = 0
+     
+     @gas4.each do |income_sum|
+      if @gas4 
+       @gas7 += income_sum.value.to_i
+       @gas5 = @gas7
+       @gas6 = "円"
+       @gasname1 = income_sum.name 
+      end
+     end
+ 
+     @Electrical4 = Income.where(name: "電気代").where(created_at: @range).where(user_id: current_user.id)
+     @Electrical7 = 0
+     
+     @Electrical4.each do |income_sum|
+      if @Electrical4 
+       @Electrical7 += income_sum.value.to_i
+       @Electrical5 = @Electrical7
+       @Electrical6 = "円"
+       @Electricalname1 = income_sum.name 
+      end
+     end
+ 
+     @rent4 = Income.where(name: "家賃").where(created_at: @range).where(user_id: current_user.id)
+     @rent7 = 0
+     
+     @rent4.each do |income_sum|
+      if @rent4 
+       @rent7 += income_sum.value.to_i
+       @rent5 = @rent7
+       @rent6 = "円"
+       @rentname1 = income_sum.name 
+      end
+     end
+ 
+     @clothing4 = Income.where(name: "衣類").where(created_at: @range).where(user_id: current_user.id)
+     @clothing7 = 0
+     
+     @clothing4.each do |income_sum|
+      if @clothing4 
+       @clothing7 += income_sum.value.to_i
+       @clothing5 = @clothing7 
+       @clothing6 = "円"
+       @clothingname1 = income_sum.name 
+      end
+     end
+
+
+     @hair4 = Income.where(name: "美容院").where(created_at: @range).where(user_id: current_user.id)
+     @hair7 = 0
+     
+     @hair4.each do |income_sum|
+      if @hair4 
+       @hair7 += income_sum.value.to_i
+       @hair5 = @hair7 
+       @hair6 = "円"
+       @hairname1 = income_sum.name 
+      end
+     end
+ 
+     @Entertainment4 = Income.where(name: "娯楽費").where(created_at: @range).where(user_id: current_user.id)
+     @Entertainment7 = 0
+     
+     @Entertainment4.each do |income_sum|
+      if @Entertainment4 
+       @Entertainment7 += income_sum.value.to_i
+       @Entertainment5 = @Entertainment7
+       @Entertainment6 = "円"
+       @Entertainmentname1 = income_sum.name 
+      end
+     end
+ 
+     @insurance4 = Income.where(name: "保険").where(created_at: @range).where(user_id: current_user.id)
+     @insurance7 = 0
+     
+     @insurance4.each do |income_sum|
+      if @insurance4 
+       @insurance7 += income_sum.value.to_i
+       @insurance5 = @insurance7
+       @insurance6 = "円"
+       @insurancename1 = income_sum.name 
+      end
+     end
+ 
+     @card4 = Income.where(name: "カード払い").where(created_at: @range).where(user_id: current_user.id)
+     @card7 = 0
+     
+     @card4.each do |income_sum|
+      if @card4 
+       @card7 += income_sum.value.to_i
+       @card5 = @card7
+       @card6 = "円"
+       @cardname1 = income_sum.name 
+      end
+     end
+ 
+     @other4 = Income.where(name: "その他").where(created_at: @range).where(user_id: current_user.id)
+     @other7 = 0
+     
+     @other4.each do |income_sum|
+      if @other4 
+       @other7 += income_sum.value.to_i
+       @other5 = @other7
+       @other6 = "円"
+       @othername1 = income_sum.name 
+      end
+     end
+
    end
  end
  

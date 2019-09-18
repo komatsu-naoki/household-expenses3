@@ -1,4 +1,8 @@
 class Income < ApplicationRecord
   has_many :moneys
-  belongs_to :user
+  has_many :users, through: :moneys
+  has_many :homes
+
+  validates :value, presence: true
+  validates :name, presence: true
 end

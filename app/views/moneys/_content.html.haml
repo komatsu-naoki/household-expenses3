@@ -26,6 +26,11 @@
   .content__box__total
    .content__box__total__title1
     支出の合計
+    (
+    = Date.current.beginning_of_month.to_s(:y1)
+    〜
+    = Date.today.end_of_month.to_s(:y2)
+    )
    .content__box__total__spend
     .content__box__total__spend__1
      = @foodname
@@ -97,5 +102,10 @@
      = @other2
    .content__box__total__title2 
     収入の合計
+    (
+    = Date.current.beginning_of_month.to_s(:y1)
+    〜
+    = Date.today.end_of_month.to_s(:y2)
+    )
    .content__box__total__income
   
