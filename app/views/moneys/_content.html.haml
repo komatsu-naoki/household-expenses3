@@ -20,6 +20,8 @@
   -#   Memo
   -#   %br
   -#   = fa_icon "pen"
+ .content__side2
+  .content__side2__year
  .content__box
   .content__box__title
    Spending & Income Total
@@ -108,4 +110,8 @@
     = Date.today.end_of_month.to_s(:y2)
     )
    .content__box__total__income
+    .content__box__total__income__1
+     = @incomename1
+     = @income5
+     = @income6
   

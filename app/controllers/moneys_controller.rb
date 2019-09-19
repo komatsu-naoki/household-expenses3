@@ -1,6 +1,8 @@
 class MoneysController < ApplicationController
 
   def index
+
+    # １ヶ月の支出
     @range = Date.today.beginning_of_month..Date.today.end_of_month
     @food0 = Spending.where(name: "食費").where(created_at: @range).where(user_id: current_user.id)
      @food3 = 0
@@ -206,5 +208,18 @@ class MoneysController < ApplicationController
        @othername = spending_sum.name 
       end
      end
+
+    #  １ヶ月の収入
+    @income4 = Income.where(name: "収入").where(created_at: @range).where(user_id: current_user.id)
+    @income7 = 0
+    
+    @income4.each do |income_sum|
+     if @income4 
+      @income7 += income_sum.value.to_i
+      @income5 = @income7
+      @income6 = "円"
+      @incomename1 = income_sum.name 
+     end
     end
+  end
 end

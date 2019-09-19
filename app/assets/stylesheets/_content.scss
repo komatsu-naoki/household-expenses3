@@ -88,6 +88,12 @@
      }
     }
   }
+  &__side2{
+    float: right;
+  height: 687px;
+  width: 10%;
+  }
+
   &__box{
     height: 583px;
     position: relative;
@@ -110,7 +116,7 @@
    &__speces1{
     border: solid 1px black;
     height: 400px;
-    width: 90%;
+    width: 89%;
     margin: auto;
     overflow: scroll;
     background-color: white;
@@ -120,12 +126,12 @@
     display: flex;
    &__in{
     font-size: 50px;
-    margin-left: 190px;
+    margin-left: 180px;
     
    }
    &__ba{
     font-size: 50px;
-    margin-left: 360px;
+    margin-left: 435px;
    }
   }
    &__speces2{
@@ -133,15 +139,21 @@
    &__income{
     border: solid 1px black;
     height: 400px;
-    width: 43%;
-    margin-left: 55px;
+    width: 30%;
+    margin-left: 62px;
     overflow: scroll;
     background-color: white;
+   }
+   &__line{
+    font-size: 30px;
+    margin-left: 20px;
+    margin-top: 10px;
+    white-space: nowrap;
    }
    &__balance{
     border: solid 1px black;
     height: 400px;
-    width: 43%;
+    width: 55%;
     margin-left: 45px;
     overflow: scroll;
     background-color: white;

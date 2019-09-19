@@ -14,7 +14,7 @@ class SpendingsController < ApplicationController
     @spending.users << current_user
     
 
-    if @spending.save!
+    if @spending.save
       redirect_to root_path
     else
       render "new"

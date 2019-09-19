@@ -18,128 +18,12 @@
   margin-left: 18vw;
   color: white;
   }
-  
-  
-
   &__icon{
     font-size: 140px;
     color: gray;
     -webkit-text-stroke: 5px black;
-
   }
 }
-
-// .spending{
-//   height: 300px;
-//   width: 95%;
-//   background-color: white;
-//   margin: auto;
-//   margin-top: 20px;
-//   text-align: center;
-//   font-size: 25px;
-//   font-weight: bold;
-//   line-height: 77px;
-//   &__box1{
-//     height: 25%;
-//     width: 100%;
-//     display: flex;
-//     &__speces1{
-//       height: 100%;
-//       width: 25%;
-//       background-color: white;
-//     }
-//     &__speces2{
-//       height: 100%;
-//       width: 25%;
-//       background-color: gray;
-//     }
-//     &__speces3{
-//       height: 100%;
-//       width: 25%;
-//       background-color: white;
-//     }
-//     &__speces4{
-//       height: 100%;
-//       width: 25%;
-//       background-color: gray;
-//     }
-//   }
-//   &__box2{
-//     height: 25%;
-//     width: 100%;
-//     display: flex;
-//     &__speces1{
-//       height: 100%;
-//       width: 25%;
-//       background-color: gray;
-//     }
-//     &__speces2{
-//       height: 100%;
-//       width: 25%;
-//       background-color: white;
-//     }
-//     &__speces3{
-//       height: 100%;
-//       width: 25%;
-//       background-color: gray;
-//     }
-//     &__speces4{
-//       height: 100%;
-//       width: 25%;
-//       background-color: white;
-//     }
-//   }
-//   &__box3{
-//     height: 25%;
-//     width: 100%;
-//     display: flex;
-//     &__speces1{
-//       height: 100%;
-//       width: 25%;
-//       background-color: white;
-//     }
-//     &__speces2{
-//       height: 100%;
-//       width: 25%;
-//       background-color: gray;
-//     }
-//     &__speces3{
-//       height: 100%;
-//       width: 25%;
-//       background-color: white;
-//     }
-//     &__speces4{
-//       height: 100%;
-//       width: 25%;
-//       background-color: gray;
-//     }
-//   }
-//   &__box4{
-//     height: 25%;
-//     width: 100%;
-//     display: flex;
-//     &__speces1{
-//       height: 100%;
-//       width: 25%;
-//       background-color: gray;
-//     }
-//     &__speces2{
-//       height: 100%;
-//       width: 25%;
-//       background-color: white;
-//     }
-//     &__speces3{
-//       height: 100%;
-//       width: 25%;
-//       background-color: gray;
-//     }
-//     &__speces4{
-//       height: 100%;
-//       width: 25%;
-//       background-color: white;
-//     }
-//   }
-// }
 
 .form{
   margin-top: 120px;
@@ -176,16 +60,17 @@
    text-align-last: center;
   }
  .send{
-   border-radius: 10%;
-   height: 50px;
-   width: 90px;
-   float: right;
-   margin-top: 40px;
-   margin-right: 380px;
-   font-weight: bold;
-   font-size: 25px;
-   background-image: url("/images/f2242df28114ca0770282ad502cba384_t.jpeg");
-   border: outset 4px white;
+  border-radius: 10%;
+  height: 50px;
+  width: 40vw;
+  float: right;
+  margin-top: 40px;
+  margin-right: 120px;
+  font-weight: bold;
+  font-size: 25px;
+  background-image: url("/images/f2242df28114ca0770282ad502cba384_t.jpeg");
+  border: outset 4px white;
+  margin-bottom: 60px;
  }
 }
 
@@ -193,102 +78,119 @@
   font-size: 30px;
   margin-left: 25px;
   margin-top: 10px;
+  white-space: nowrap;
 }
 
 .content__box__speces1__two{
   font-size: 30px;
   margin-left: 20px;
   margin-top: 10px;
+  white-space: nowrap;
 }
 
 .content__box__speces1__three{
   font-size: 30px;
   margin-left: 20px;
   margin-top: 10px;
+  white-space: nowrap;
 }
 
 .content__box__speces1__four{
   font-size: 30px;
   margin-left: 20px;
   margin-top: 10px;
+  white-space: nowrap;
 }
 
 .content__box__speces1__five{
   font-size: 30px;
   margin-left: 20px;
   margin-top: 10px;
+  white-space: nowrap;
 }
 
 .content__box__speces1__six{
   font-size: 30px;
   margin-left: 20px;
   margin-top: 10px;
+  white-space: nowrap;
 }
 
 .content__box__speces1__seven{
   font-size: 30px;
   margin-left: 20px;
   margin-top: 10px;
+  white-space: nowrap;
 }
 
 .content__box__speces1__eight{
   font-size: 30px;
   margin-left: 20px;
   margin-top: 10px;
+  white-space: nowrap;
 }
 
 .content__box__speces1__nine{
   font-size: 30px;
   margin-left: 20px;
   margin-top: 10px;
+  white-space: nowrap;
 }
 
 .content__box__speces1__ten{
   font-size: 30px;
   margin-left: 20px;
   margin-top: 10px;
+  white-space: nowrap;
 }
 
 .content__box__speces1__eleven{
   font-size: 30px;
   margin-left: 20px;
   margin-top: 10px;
+  white-space: nowrap;
 }
 
 .content__box__speces1__twelve{
   font-size: 30px;
   margin-left: 20px;
   margin-top: 10px;
+  white-space: nowrap;
 }
 
 .content__box__speces1__thirteen{
   font-size: 30px;
   margin-left: 20px;
   margin-top: 10px;
+  white-space: nowrap;
 }
 
 .content__box__speces1__fourteen{
   font-size: 30px;
   margin-left: 20px;
   margin-top: 10px;
+  white-space: nowrap;
 }
 
 .content__box__speces1__fifteen{
   font-size: 30px;
   margin-left: 20px;
   margin-top: 10px;
+  white-space: nowrap;
 }
 
 .content__box__speces1__sixteen{
   font-size: 30px;
   margin-left: 20px;
   margin-top: 10px;
+  white-space: nowrap;
 }
 
 .content__box__speces1__seventeen{
   font-size: 30px;
   margin-left: 20px;
   margin-top: 10px;
+  white-space: nowrap;
 }
 
 
@@ -297,101 +199,118 @@
   font-size: 30px;
   margin-left: 25px;
   margin-top: 10px;
+  white-space: nowrap;
 }
 
 .content__box__speces2__two{
   font-size: 30px;
   margin-left: 20px;
   margin-top: 10px;
+  white-space: nowrap;
 }
 
 .content__box__speces2__three{
   font-size: 30px;
   margin-left: 20px;
   margin-top: 10px;
+  white-space: nowrap;
 }
 
 .content__box__speces2__four{
   font-size: 30px;
   margin-left: 20px;
   margin-top: 10px;
+  white-space: nowrap;
 }
 
 .content__box__speces2__five{
   font-size: 30px;
   margin-left: 20px;
   margin-top: 10px;
+  white-space: nowrap;
 }
 
 .content__box__speces2__six{
   font-size: 30px;
   margin-left: 20px;
   margin-top: 10px;
+  white-space: nowrap;
 }
 
 .content__box__speces2__seven{
   font-size: 30px;
   margin-left: 20px;
   margin-top: 10px;
+  white-space: nowrap;
 }
 
 .content__box__speces2__eight{
   font-size: 30px;
   margin-left: 20px;
   margin-top: 10px;
+  white-space: nowrap;
 }
 
 .content__box__speces2__nine{
   font-size: 30px;
   margin-left: 20px;
   margin-top: 10px;
+  white-space: nowrap;
 }
 
 .content__box__speces2__ten{
   font-size: 30px;
   margin-left: 20px;
   margin-top: 10px;
+  white-space: nowrap;
 }
 
 .content__box__speces2__eleven{
   font-size: 30px;
   margin-left: 20px;
   margin-top: 10px;
+  white-space: nowrap;
 }
 
 .content__box__speces2__twelve{
   font-size: 30px;
   margin-left: 20px;
   margin-top: 10px;
+  white-space: nowrap;
 }
 
 .content__box__speces2__thirteen{
   font-size: 30px;
   margin-left: 20px;
   margin-top: 10px;
+  white-space: nowrap;
 }
 
 .content__box__speces2__fourteen{
   font-size: 30px;
   margin-left: 20px;
   margin-top: 10px;
+  white-space: nowrap;
 }
 
 .content__box__speces2__fifteen{
   font-size: 30px;
   margin-left: 20px;
   margin-top: 10px;
+  white-space: nowrap;
 }
 
 .content__box__speces2__sixteen{
   font-size: 30px;
   margin-left: 20px;
   margin-top: 10px;
+  white-space: nowrap;
 }
 
 .content__box__speces2__seventeen{
   font-size: 30px;
   margin-left: 20px;
   margin-top: 10px;
+  white-space: nowrap;
 }
 

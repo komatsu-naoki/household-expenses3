@@ -11,12 +11,30 @@
     %br
     = fa_icon "coins"
  .content__box
-  .form
+  .title1
+   .title1__name1
+    Income
+   .title1__icon1
+    = fa_icon "wallet"
+  .form2
    = form_for @income do |f|
-    .speces
+    .speces2
     = f.select :name, [["食費"],["日用品"],["交通費"],["本・雑誌"],["携帯電話"],["インターネット"],["医療費"],["水道代"],["ガス代"],["電気代"],["家賃"],["衣類"],["美容院"],["娯楽費"],["保険"],["カード払い"],["その他"],["収入"]], :prompt => "選択してください"
-    .value__box
+    .value__box2
     = f.number_field :value, size: :"10", min:1, class: :text_box, placeholder: "残高または収入を入力してください"
     = f.submit "追加", :class => "send"
+
+  .title2
+   .title2__name2
+    Balance & edit
+   .title2__icon2
+    = fa_icon "wallet"
+  .form1
+   = form_for @income do |f|
+    .speces1
+    = f.select :name, [["食費","食費e"],["日用品","日用品e"],["交通費","交通費e"],["本・雑誌","本・雑誌e"],["携帯電話","携帯電話e"],["インターネット","インターネットe"],["医療費","医療費e"],["水道代","水道代e"],["ガス代","ガス代e"],["電気代","電気代e"],["家賃","家具e"],["衣類","衣類e"],["美容院","美容院e"],["娯楽費","娯楽費e"],["保険","保険e"],["カード払い","カード払いe"],["その他","その他e"],["収入","収入e"]], :prompt => "選択してください"
+    .value__box1
+    = f.number_field :value, size: :"10", min:1, class: :text_box, placeholder: "編集したい金額を入力してください"
+    = f.submit "編集", :class => "send"
 
    

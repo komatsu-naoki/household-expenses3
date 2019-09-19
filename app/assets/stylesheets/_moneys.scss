@@ -28,6 +28,7 @@
   -webkit-text-stroke: 2px black;
   color: white;
   font-weight: bold;
+  white-space: nowrap;
   }
   &__spend{
   background-color: white;
@@ -36,6 +37,7 @@
   margin: auto;
   font-size: 40px;
   overflow: scroll;
+  white-space: nowrap;
   &__1{
    font-size: 40px;
    margin-left: 20px;
@@ -136,12 +138,18 @@
     color: white;
     font-weight: bold;
     margin-top: 30px;
+    white-space: nowrap;
   }
   &__income{
     background-color: white;
     height: 60vh;
     width: 60vw;
     margin: auto;
+    &__1{
+     font-size: 40px;
+     margin-left: 20px;
+     margin-top: 10px;
+    }
     }
 }
 
