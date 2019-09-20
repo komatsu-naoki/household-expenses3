@@ -1,0 +1,163 @@
+.title1{
+  height: 175px;
+  width: 77vw;
+  margin: auto;
+  margin-top: 30px;
+  font-size: 100px;
+  display: flex;
+  font-family: 'Lobster', cursive;
+  -webkit-text-stroke: 3px white;
+  // border: solid;
+  // background-image: url("/images/KAI428022_TP_V.jpg");
+  &__name1{
+  height: 175px;
+  font-size: 140px;
+  font-family: 'Lobster', cursive;
+  -webkit-text-stroke: 5px black;
+  line-height: 145px;
+  margin-left: 22vw;
+  color: white;
+  }
+  
+  
+
+  &__icon1{
+    font-size: 90px;
+    color: gray;
+    -webkit-text-stroke: 5px black;
+    margin-left: 18px;
+    margin-top: 27px;
+
+  }
+}
+
+.title2{
+  height: 175px;
+  width: 77vw;
+  margin: auto;
+  margin-top: 30px;
+  font-size: 100px;
+  display: flex;
+  font-family: 'Lobster', cursive;
+  -webkit-text-stroke: 3px white;
+  // border: solid;
+  // background-image: url("/images/KAI428022_TP_V.jpg");
+  &__name2{
+  height: 175px;
+  font-size: 120px;
+  font-family: 'Lobster', cursive;
+  -webkit-text-stroke: 5px black;
+  line-height: 160px;
+  margin-left: 13vw;
+  color: white;
+  }
+  
+  
+
+  &__icon2{
+    font-size: 90px;
+    color: gray;
+    -webkit-text-stroke: 5px black;
+    margin-left: 18px;
+    margin-top: 27px;
+
+  }
+}
+
+.form1{
+  margin-top: 120px;
+ .speces1{
+   font-size: 20px;
+   font-weight: bold;
+   margin-left: 60px;
+   font-family: 'Noto Serif JP', serif;
+ }
+ select{
+  height: 50px;
+  width: 250px;
+  background-color: white;
+  font-weight: bold;
+  font-size: 20px;
+  margin-left: 36px;
+  text-align-last: center;
+ }
+ .value__box1{
+   width: 40vw;
+   margin-left: 550px;
+   margin-top: -55px;
+   font-size: 30px;
+   font-weight: bold;
+   font-family: 'Noto Serif JP', serif;
+ }
+ .text_box{
+   height: 50px;
+   width: 50vw;
+   margin-left: 370px;
+   background-color: white;
+   float: left;
+   font-size: 35px;
+   text-align-last: center;
+  }
+ .send{
+  border-radius: 10%;
+  height: 50px;
+  width: 40vw;
+  float: right;
+  margin-top: 40px;
+  margin-right: 120px;
+  font-weight: bold;
+  font-size: 25px;
+  background-image: url("/images/f2242df28114ca0770282ad502cba384_t.jpeg");
+  border: outset 4px white;
+  margin-bottom: 60px;
+ }
+}
+
+.form2{
+  margin-top: 50px;
+ .speces2{
+   font-size: 20px;
+   font-weight: bold;
+   margin-left: 60px;
+   font-family: 'Noto Serif JP', serif;
+ }
+ select{
+  height: 50px;
+  width: 250px;
+  background-color: white;
+  font-weight: bold;
+  font-size: 20px;
+  margin-left: 36px;
+  text-align-last: center;
+ }
+ .value__box2{
+   width: 40vw;
+   margin-left: 550px;
+   margin-top: -55px;
+   font-size: 30px;
+   font-weight: bold;
+   font-family: 'Noto Serif JP', serif;
+ }
+ .text_box{
+   height: 50px;
+   width: 50vw;
+   margin-left: 370px;
+   background-color: white;
+   float: left;
+   font-size: 35px;
+   text-align-last: center;
+  }
+ .send{
+   border-radius: 10%;
+   height: 50px;
+   width: 40vw;
+   float: right;
+   margin-top: 40px;
+   margin-right: 120px;
+   font-weight: bold;
+   font-size: 25px;
+   background-image: url("/images/f2242df28114ca0770282ad502cba384_t.jpeg");
+   border: outset 4px white;
+   margin-bottom: 200px;
+ }   
+}

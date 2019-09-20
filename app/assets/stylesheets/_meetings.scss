@@ -1,0 +1,94 @@
+.simple-calendar {
+  .calendar-heading{
+    margin-top: 20px;
+    margin-bottom: 20px;
+   text-align: center;
+   -webkit-text-stroke: 1px #111;
+   font-weight: bold;
+  .calendar-title{
+    font-size: 50px;
+    margin: 0 30px;
+    color: white;
+  }
+  a{
+    font-size: 30px;
+    -webkit-text-stroke: 1px #111;
+  }
+}
+  .table{
+    border: 5px solid white;
+    width: 70vw;
+    margin: auto;
+    background-color: #33333380;
+    // background-image: url("/images/f2242df28114ca0770282ad502cba384_t.jpeg");
+    th{
+      font-weight: bold;
+      border: 5px solid white;
+      text-align: center;
+      color: white;
+     }
+  }
+  .day {
+    font-size: 30px;
+    a{
+    color: white;
+    }
+  }
+  td{
+    border: 5px solid white;
+  }
+  // .wday-0 {}
+  // .wday-1 {}
+  // .wday-2 {}
+  // .wday-3 {}
+  // .wday-4 {}
+  // .wday-5 {}
+  // .wday-6 {}
+
+  .today {
+    background-color: #00a1ff;
+  }
+  // .past {}
+  // .future {}
+
+  // .start-date {}
+
+  .prev-month {
+   background-color: #ffffff00;
+  }
+  .next-month { 
+    background-color: #ffffff00
+  }
+  // .current-month {}
+
+  // .has-events {}
+}
+
+.content__box__speces3{
+  border: solid 1px white;
+  height: 400px;
+  width: 89%;
+  margin: auto;
+  overflow: scroll;
+  background-color: white;
+  &__income{
+    font-size: 30px;
+    margin-left: 25px;
+    margin-top: 10px;
+    white-space: nowrap;
+    // &__line{
+      
+    // }
+  }
+}
+
+.content__box__income__in1{
+ font-size: 70px;
+ margin: auto;
+}
+
+.content__form{
+ 
+  width: 60vw;
+  height: 100px;
+}

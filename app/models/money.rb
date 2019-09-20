@@ -1,5 +1,5 @@
 class Money < ApplicationRecord
-  belongs_to :spending
-  # belongs_to :income
+  belongs_to :spending, optional: true
+  belongs_to :income, optional: true
   belongs_to :user
 end

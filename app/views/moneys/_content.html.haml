@@ -1,0 +1,125 @@
+.content
+ .content__side
+  .content__side__user
+   = link_to edit_user_path(current_user) do
+    edit
+    %br
+    = fa_icon "user"
+  .content__side__total
+   = link_to moneys_path do
+    Total
+    %br
+    = fa_icon "coins"
+  .content__side__calender
+   = link_to meetings_path do
+    Calendar
+    %br
+    = fa_icon "calendar-week"
+  -# .content__side__comment
+  -#  = link_to root_path do
+  -#   Memo
+  -#   %br
+  -#   = fa_icon "pen"
+ .content__side2
+  .content__side2__year
+ .content__box
+  .content__box__title
+   Spending & Income Total
+  .content__box__total
+   .content__box__total__title1
+    支出の合計
+    (
+    = Date.current.beginning_of_month.to_s(:y1)
+    〜
+    = Date.today.end_of_month.to_s(:y2)
+    )
+   .content__box__total__spend
+    .content__box__total__spend__1
+     = @foodname
+     = @food1
+     = @food2
+    .content__box__total__spend__2
+     = @dailynecessitiesname
+     = @dailynecessities1
+     = @dailynecessities2
+    .content__box__total__spend__3
+     = @texname
+     = @tex1
+     = @tex2
+    .content__box__total__spend__4
+     = @bookname
+     = @book1
+     = @book2
+    .content__box__total__spend__5
+     = @cellname
+     = @cell1
+     = @cell2
+    .content__box__total__spend__6 
+     = @internetname
+     = @internet1
+     = @internet2
+    .content__box__total__spend__7
+     = @Medicalname
+     = @Medical1
+     = @Medical2
+    .content__box__total__spend__8
+     = @watername
+     = @water1
+     = @water2
+    .content__box__total__spend__9
+     = @gasname
+     = @gas1
+     = @gas2
+    .content__box__total__spend__10
+     = @Electricalname
+     = @Electrical1
+     = @Electrical2
+    .content__box__total__spend__11
+     = @rentname
+     = @rent1
+     = @rent2
+    .content__box__total__spend__12
+     = @clothingname
+     = @clothing1
+     = @clothing2
+    .content__box__total__spend__13
+     = @hairname
+     = @hair1
+     = @hair2
+    .content__box__total__spend__14
+     = @Entertainmentname
+     = @Entertainment1
+     = @Entertainment2
+    .content__box__total__spend__15
+     = @insurancename
+     = @insurance1
+     = @insurance2
+    .content__box__total__spend__16
+     = @cardname
+     = @card1
+     = @card2
+    .content__box__total__spend__17
+     = @othername
+     = @other1
+     = @other2
+   .content__box__total__title2 
+    収入の合計
+    (
+    = Date.current.beginning_of_month.to_s(:y1)
+    〜
+    = Date.today.end_of_month.to_s(:y2)
+    )
+   .content__box__total__income
+    .content__box__total__income__1
+     - if 0 <= @incomemonth
+      収入
+      = @incomemonth
+      円
+     - elsif @incomemonth < 0
+      収入エラーです。
+      %br
+      = -@incomemonth
+      円足りません
+      %br
+      編集してください
+  

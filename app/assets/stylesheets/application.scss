@@ -1,12 +1,25 @@
+/*
+ *= require simple_calendar
+ *= require_tree .
+ *= require_self
+ */
 @import "font-awesome";
 @import "./reset";
 @import "common";
 @import "user";
 .wrapper{
+  @import "foods";
   height: 100vh;
   width: 100vw;
+  @import url('https://fonts.googleapis.com/css?family=Merienda');
   @import "homes";
   @import "spendings";
+  @import "moneys";
+  @import "incomes";
+  @import "scaffolds";
+  @import "meetings";
+  
   
   
  }
+ 

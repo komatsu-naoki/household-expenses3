@@ -7,16 +7,16 @@
    = link_to root_path do
     = fa_icon "home"
     Home
-  .header__menu__blog
-   = link_to root_path do
-    = fa_icon "book-open"
-    Blog
+  -# .header__menu__blog
+  -#  = link_to root_path do
+  -#   = fa_icon "book-open"
+  -#   Blog
   .header__menu__spend
    = link_to new_spending_path do
     = fa_icon "shopping-cart"
     Spend
   .header__menu__income
-   = link_to root_path do
+   = link_to new_income_path do
     = fa_icon "wallet"
     Income
  

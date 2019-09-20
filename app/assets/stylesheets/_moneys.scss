@@ -1,0 +1,155 @@
+.content__box__title{
+  font-size: 90px;
+  font-family: 'Lobster', cursive;
+  -webkit-text-stroke:2px black;
+  color: white;
+  text-align: center;
+  margin-top: 10px;
+  // border: solid 2px black;
+  height: 120px;
+  line-height: 110px;
+  margin-left: 27px;
+  margin-right: 33px;
+  // background-image: url("/images/36491275-中世の壁の石の背景.jpg");
+}
+
+.content__box__total{
+  margin-top: 30px;
+  &__title1{
+  font-size: 27px;
+  text-align: center;
+  margin: auto;
+  // border: solid 1px black;
+  height: 100px;
+  line-height: 200px;
+  width: 70vw;
+  margin-bottom: 30px; 
+  // background-image: url("/images/f2242df28114ca0770282ad502cba384_t.jpeg");
+  -webkit-text-stroke: 2px black;
+  color: white;
+  font-weight: bold;
+  white-space: nowrap;
+  }
+  &__spend{
+  background-color: white;
+  height: 60vh;
+  width: 60vw;
+  margin: auto;
+  font-size: 40px;
+  overflow: scroll;
+  white-space: nowrap;
+  &__1{
+   font-size: 40px;
+   margin-left: 20px;
+   margin-top: 10px;
+  }
+  &__2{
+   font-size: 40px;
+   margin-left: 20px;
+   margin-top: 10px;
+  }
+  &__3{
+    font-size: 40px;
+    margin-left: 20px;
+    margin-top: 10px;
+   }
+   &__4{
+    font-size: 40px;
+    margin-left: 20px;
+    margin-top: 10px;
+   }
+   &__5{
+    font-size: 40px;
+    margin-left: 20px;
+    margin-top: 10px;
+   }
+   &__6{
+    font-size: 40px;
+    margin-left: 20px;
+    margin-top: 10px;
+   }
+   &__7{
+     font-size: 40px;
+     margin-left: 20px;
+     margin-top: 10px;
+    }
+    &__8{
+     font-size: 40px;
+     margin-left: 20px;
+     margin-top: 10px;
+    }
+    &__9{
+      font-size: 40px;
+      margin-left: 20px;
+      margin-top: 10px;
+     }
+     &__10{
+      font-size: 40px;
+      margin-left: 20px;
+      margin-top: 10px;
+     }
+     &__11{
+      font-size: 40px;
+      margin-left: 20px;
+      margin-top: 10px;
+     }
+     &__12{
+      font-size: 40px;
+      margin-left: 20px;
+      margin-top: 10px;
+     }
+     &__13{
+       font-size: 40px;
+       margin-left: 20px;
+       margin-top: 10px;
+      }
+      &__14{
+       font-size: 40px;
+       margin-left: 20px;
+       margin-top: 10px;
+      }
+      &__15{
+       font-size: 40px;
+       margin-left: 20px;
+       margin-top: 10px;
+      }
+      &__16{
+       font-size: 40px;
+       margin-left: 20px;
+       margin-top: 10px;
+      }
+      &__17{
+        font-size: 40px;
+        margin-left: 20px;
+        margin-top: 10px;
+       }
+  }
+  &__title2{
+    font-size: 27px;
+    text-align: center;
+    margin: auto;
+    // border: solid 1px black;
+    height: 100px;
+    line-height: 200px;
+    width: 70vw;
+    margin-bottom: 30px; 
+    // background-image: url("/images/450-20130118184438164712.jpg");
+    -webkit-text-stroke: 2px black;
+    color: white;
+    font-weight: bold;
+    margin-top: 30px;
+    white-space: nowrap;
+  }
+  &__income{
+    background-color: white;
+    height: 60vh;
+    width: 60vw;
+    margin: auto;
+    &__1{
+     font-size: 40px;
+     margin-left: 20px;
+     margin-top: 10px;
+    }
+    }
+}
+

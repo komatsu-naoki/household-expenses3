@@ -6,20 +6,20 @@
     %br
     = fa_icon "user"
   .content__side__total
-   = link_to root_path do
+   = link_to moneys_path do
     Total
     %br
     = fa_icon "coins"
-  .content__side__comment
-   = link_to root_path do
-    Memo
-    %br
-    = fa_icon "pen"
   .content__side__calender
-   = link_to root_path do
-    Calender
+   = link_to meetings_path do
+    Calendar
     %br
     = fa_icon "calendar-week"
+  -# .content__side__comment
+  -#  = link_to root_path do
+  -#   Memo
+  -#   %br
+  -#   = fa_icon "pen"
  .content__box
   .content__box__date
    = Date.current.to_s(:ymd)
@@ -27,13 +27,348 @@
    本日の支出
   .content__box__speces1
    .content__box__speces1__one
-    - current_user.spendings.first(1).each do |spending|
-     - if spending.name == "食費" && Date.today <= spending.created_at && spending.created_at < Date.today + 1 
-      = spending.name
-      = Spending.sumvalue.to_i 
-      円
-      %br
+    = @foodname
+    = @food1
+    = @food2
+    
+   .content__box__speces1__two
+    = @dailynecessitiesname
+    = @dailynecessities1
+    = @dailynecessities2
+    
+   .content__box__speces1__three
+    = @texname
+    = @tex1
+    = @tex2
+    
+   .content__box__speces1__four
+    = @bookname
+    = @book1
+    = @book2
+    
+   .content__box__speces1__five
+    = @cellname
+    = @cell1
+    = @cell2
+    
+   .content__box__speces1__six
+    = @internetname
+    = @internet1
+    = @internet2
+    
+   .content__box__speces1__seven
+    = @Medicalname
+    = @Medical1
+    = @Medical2
+    
+   .content__box__speces1__eight
+    = @watername
+    = @water1
+    = @water2
+    
+   .content__box__speces1__nine
+    = @gasname
+    = @gas1
+    = @gas2
+    
+   .content__box__speces1__ten
+    = @Electricalname
+    = @Electrical1
+    = @Electrical2
+    
+   .content__box__speces1__eleven
+    = @rentname
+    = @rent1
+    = @rent2
+    
+   .content__box__speces1__twelve
+    = @clothingname
+    = @clothing1
+    = @clothing2
+
+    .content__box__speces1__thirteen
+    = @hairname
+    = @hair1
+    = @hair2
+    
+   .content__box__speces1__fourteen
+    = @Entertainmentname
+    = @Entertainment1
+    = @Entertainment2
+    
+   .content__box__speces1__fifteen
+    = @insurancename
+    = @insurance1
+    = @insurance2
+    
+   .content__box__speces1__sixteen
+    = @cardname
+    = @card1
+    = @card2
+    
+   .content__box__speces1__seventeen
+    = @othername
+    = @other1
+    = @other2
+    
   .content__box__income
-   本日の収入
+   .content__box__income__in
+    収入
+   .content__box__income__ba
+    残高
   .content__box__speces2
+   .content__box__speces2__income
+    .content__box__speces2__line
+     - if 0 <= @incomesum1
+      収入
+      = @incomesum1
+      円
+     - elsif @incomesum1 < 0
+      ※収入エラーです。※
+      %br
+      Incomeで収入を
+      %br
+      = -@incomesum1
+      円追加して下さい
+
+   .content__box__speces2__balance
+    .content__box__speces2__one
+     - if @fo1 < 0 
+      食費
+      = -@fo1
+      円不足しています
+     - elsif @fo2 < 0
+      食費
+      = -@fo2
+      円不足しています
+     - else
+      食費
+      = @fo2
+      円
+    
+    .content__box__speces2__two
+     - if @da1 < 0 
+      日用品
+      = -@da1
+      円不足しています
+     - elsif @da2 < 0
+      日用品
+      = -@da2
+      円不足しています
+     - else
+      日用品
+      = @da2
+      円
+    
+    .content__box__speces2__three
+     - if @te1 < 0 
+      交通費
+      = -@te1
+      円不足しています
+     - elsif @te2 < 0
+      交通費
+      = -@te2
+      円不足しています
+     - else
+      交通費
+      = @te2
+      円
+    
+    .content__box__speces2__four
+     - if @bo1 < 0 
+      本・雑誌
+      = -@bo1
+      円不足しています
+     - elsif @bo2 < 0
+      本・雑誌
+      = -@bo2
+      円不足しています
+     - else
+      本・雑誌
+      = @bo2
+      円
+    
+    .content__box__speces2__five
+     - if @ce1 < 0 
+      携帯電話
+      = -@ce1
+      円不足しています
+     - elsif @ce2 < 0
+      携帯電話
+      = -@ce2
+      円不足しています
+     - else
+      携帯電話
+      = @ce2
+      円
+    
+    .content__box__speces2__six
+     - if @in1 < 0 
+      インターネット
+      = -@in1
+      円不足しています
+     - elsif @in2 < 0
+      インターネット
+      = -@in2
+      円不足しています
+     - else
+      インターネット
+      = @in2
+      円
+    
+    .content__box__speces2__seven
+     - if @me1 < 0 
+      医療費
+      = -@me1
+      円不足しています
+     - elsif @me2 < 0
+      医療費
+      = -@me2
+      円不足しています
+     - else
+      医療費
+      = @me2
+      円
+    
+    .content__box__speces2__eight
+     - if @wa1 < 0 
+      水道代
+      = -@wa1
+      円不足しています
+     - elsif @wa2 < 0
+      水道代
+      = -@wa2
+      円不足しています
+     - else
+      水道代
+      = @wa2
+      円
+    
+    .content__box__speces2__nine
+     - if @ga1 < 0 
+      ガス代
+      = -@ga1
+      円不足しています
+     - elsif @ga2 < 0
+      ガス代
+      = -@ga2
+      円不足しています
+     - else
+      ガス代
+      = @ga2
+      円
+    
+    .content__box__speces2__ten
+     - if @el1 < 0 
+      電気代
+      = -@el1
+      円不足しています
+     - elsif @el2 < 0
+      電気代
+      = -@el2
+      円不足しています
+     - else
+      電気代
+      = @el2
+      円
+    
+    .content__box__speces2__eleven
+     - if @re1 < 0 
+      家賃
+      = -@re1
+      円不足しています
+     - elsif @re2 < 0
+      家賃
+      = -@re2
+      円不足しています
+     - else
+      家賃
+      = @re2
+      円
+    
+    .content__box__speces2__twelve
+     - if @cl1 < 0 
+      衣類
+      = -@cl1
+      円不足しています
+     - elsif @cl2 < 0
+      衣類
+      = -@cl2
+      円不足しています
+     - else
+      衣類
+      = @cl2
+      円
+
+    .content__box__speces2__thirteen
+     - if @ha1 < 0 
+      美容院
+      = -@ha1
+      円不足しています
+     - elsif @ha2 < 0
+      美容院
+      = -@ha2
+      円不足しています
+     - else
+      美容院
+      = @ha2
+      円
+    
+    .content__box__speces2__fourteen
+     - if @en1 < 0 
+      娯楽費
+      = -@en1
+      円不足しています
+     - elsif @en2 < 0
+      娯楽費
+      = -@en2
+      円不足しています
+     - else
+      娯楽費
+      = @en2
+      円
+    
+    .content__box__speces2__fifteen
+     - if @ins1 < 0 
+      保険
+      = -@ins1
+      円不足しています
+     - elsif @ins2 < 0
+      保険
+      = -@ins2
+      円不足しています
+     - else
+      保険
+      = @ins2
+      円
+    
+    .content__box__speces2__sixteen
+     - if @ca1 < 0 
+      カード払い
+      = -@ca1
+      円不足しています
+     - elsif @ca2 < 0
+      カード払い
+      = -@ca2
+      円不足しています
+     - else
+      カード払い
+      = @ca2
+      円
+    
+    .content__box__speces2__seventeen
+     - if @ot1 < 0 
+      その他
+      = -@ot1
+      円不足しています
+     - elsif @ot2 < 0
+      その他
+      = -@ot2
+      円不足しています
+     - else
+      その他
+      = @ot2
+      円
+
+  
   
