@@ -10,55 +10,24 @@
     Total
     %br
     = fa_icon "coins"
+  .content__side__calender
+   = link_to meetings_path do
+    Calendar
+    %br
+    = fa_icon "calendar-week"
  .content__box
   .title
    .title__name
     Spending
    .title__icon
     = fa_icon "shopping-cart"
-  -# .spending
-  -#  .spending__box1
-  -#   .spending__box1__speces1
-  -#    食費
-  -#   .spending__box1__speces2
-  -#    日用品
-  -#   .spending__box1__speces3
-  -#    交通費
-  -#   .spending__box1__speces4
-  -#    本・雑誌
-  -#  .spending__box2
-  -#   .spending__box2__speces1
-  -#    携帯電話
-  -#   .spending__box2__speces2
-  -#    インターネット
-  -#   .spending__box2__speces3
-  -#    病院
-  -#   .spending__box2__speces4
-  -#    水道代
-  -#  .spending__box3
-  -#   .spending__box3__speces1
-  -#    ガス代
-  -#   .spending__box3__speces2
-  -#    電気代
-  -#   .spending__box3__speces3
-  -#    家賃
-  -#   .spending__box3__speces4
-  -#    衣類
-  -#  .spending__box4
-  -#   .spending__box4__speces1
-  -#    娯楽費
-  -#   .spending__box4__speces2
-  -#    保険
-  -#   .spending__box4__speces3
-  -#    カード払い
-  -#   .spending__box4__speces4
-  -#    その他
   .form
    = form_for @spending do |f|
     .speces
     = f.select :name, [["食費"],["日用品"],["交通費"],["本・雑誌"],["携帯電話"],["インターネット"],["医療費"],["水道代"],["ガス代"],["電気代"],["家賃"],["衣類"],["美容院"],["娯楽費"],["保険"],["カード払い"],["その他"]], :prompt => "選択してください"
     .value__box
     = f.number_field :value, size: :"10", min:1, class: :text_box, placeholder: "支出を入力してください"
+    = f.date_field :date, value: Date.today, class: :hidden
     = f.submit "追加", :class => "send"
     
     

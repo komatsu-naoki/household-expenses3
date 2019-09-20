@@ -58,3 +58,5 @@ gem 'devise'
 gem 'jquery-rails'
 gem 'font-awesome-rails'
 gem 'rails-i18n'
+gem "simple_calendar", "~> 2.0"
+gem 'pry-byebug', group: :development

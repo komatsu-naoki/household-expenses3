@@ -11,7 +11,6 @@ class IncomesController < ApplicationController
   def create
     
     @income = Income.new(income_params)
-    @income.users << current_user
     if @income.save
       redirect_to root_path
     else

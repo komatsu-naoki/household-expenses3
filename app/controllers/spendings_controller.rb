@@ -13,6 +13,7 @@ class SpendingsController < ApplicationController
     @spending = Spending.new(spending_params)
     @spending.users << current_user
     
+    
 
     if @spending.save
       redirect_to root_path
@@ -30,7 +31,7 @@ class SpendingsController < ApplicationController
   private
 
   def spending_params
-    params.require(:spending).permit(:name, :value).merge(user_id: current_user.id)
+    params.require(:spending).permit(:name, :value, :date).merge(user_id: current_user.id)
   end
 
 end

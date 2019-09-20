@@ -15,3 +15,10 @@ week1 = %W(日 月 火 水 木 金 土)[b.wday]
 
 Time::DATE_FORMATS[:y2] = ("%Y年%m月%d日(#{week1})") 
 Date::DATE_FORMATS[:y2] = ("%Y年%m月%d日(#{week1})")
+
+
+Time::DATE_FORMATS[:y3] = ("%Y年%m月%d日") 
+Date::DATE_FORMATS[:y3] = ("%Y年%m月%d日")
+
+
+

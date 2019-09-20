@@ -8,4 +8,6 @@ class User < ApplicationRecord
   has_many :spendings, through: :moneys
   has_many :homes
   has_many :incomes, through: :moneys
+
+
 end

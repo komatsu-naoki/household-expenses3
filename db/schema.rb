@@ -10,13 +10,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20190916083619) do
+ActiveRecord::Schema.define(version: 20190919045412) do
 
   create_table "homes", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.integer  "user_id"
     t.integer  "spending_id"
+    t.integer  "meeting_id"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
+    t.index ["meeting_id"], name: "index_homes_on_meeting_id", using: :btree
     t.index ["spending_id"], name: "index_homes_on_spending_id", using: :btree
     t.index ["user_id"], name: "index_homes_on_user_id", using: :btree
   end
@@ -25,9 +27,23 @@ ActiveRecord::Schema.define(version: 20190916083619) do
     t.string   "name",       null: false
     t.string   "value",      null: false
     t.integer  "user_id"
+    t.datetime "date"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["user_id"], name: "index_incomes_on_user_id", using: :btree
+  end
+
+  create_table "meetings", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.string   "name"
+    t.datetime "start_time"
+    t.integer  "home_id"
+    t.integer  "spending_id"
+    t.integer  "user_id"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+    t.index ["home_id"], name: "index_meetings_on_home_id", using: :btree
+    t.index ["spending_id"], name: "index_meetings_on_spending_id", using: :btree
+    t.index ["user_id"], name: "index_meetings_on_user_id", using: :btree
   end
 
   create_table "money", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
@@ -45,6 +61,7 @@ ActiveRecord::Schema.define(version: 20190916083619) do
     t.string   "name",       null: false
     t.string   "value",      null: false
     t.integer  "user_id"
+    t.string   "date"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["user_id"], name: "index_spendings_on_user_id", using: :btree
@@ -64,9 +81,12 @@ ActiveRecord::Schema.define(version: 20190916083619) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
   end
 
+  add_foreign_key "homes", "meetings"
   add_foreign_key "homes", "spendings"
   add_foreign_key "homes", "users"
   add_foreign_key "incomes", "users"
+  add_foreign_key "meetings", "spendings"
+  add_foreign_key "meetings", "users"
   add_foreign_key "money", "incomes"
   add_foreign_key "money", "spendings"
   add_foreign_key "money", "users"

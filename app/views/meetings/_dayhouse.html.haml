@@ -1,0 +1,121 @@
+.content
+ .content__side
+  .content__side__user
+   = link_to edit_user_path(current_user) do
+    edit
+    %br
+    = fa_icon "user"
+  .content__side__total
+   = link_to moneys_path do
+    Total
+    %br
+    = fa_icon "coins"
+  .content__side__calender
+   = link_to meetings_path do
+    Calendar
+    %br
+    = fa_icon "calendar-week"
+  -# .content__side__comment
+  -#  = link_to root_path do
+  -#   Memo
+  -#   %br
+  -#   = fa_icon "pen"
+ .content__box
+  .content__box__date
+   = @day[0]
+   = @day[1]
+   = @day[2]
+   = @day[3]
+   年
+   = @day[6]
+   月
+   - if @day[8].to_i == 0
+    = @day[9]
+   - else 
+    = @day[8..9]
+   日
+  - if @meeting3 == @day 
+   .content__box__speces1__one
+    = @foodnamed
+    = @food1d
+    = @food2d
+
+   .content__box__speces1__two
+    = @dailynecessitiesnamed
+    = @dailynecessities1d
+    = @dailynecessities2d
+    
+    .content__box__speces1__three
+     = @texnamed
+     = @tex1d
+     = @tex2d
+    
+    .content__box__speces1__four
+     = @booknamed
+     = @book1d
+     = @book2d
+    
+    .content__box__speces1__five
+     = @cellnamed
+     = @cell1d
+     = @cell2d
+    
+    .content__box__speces1__six
+     = @internetnamed
+     = @internet1d
+     = @internet2d
+    
+    .content__box__speces1__seven
+     = @Medicalnamed
+     = @Medical1d
+     = @Medical2d
+    
+    .content__box__speces1__eight
+     = @waternamed
+     = @water1d
+     = @water2d
+    
+    .content__box__speces1__nine
+     = @gasnamed
+     = @gas1d
+     = @gas2d
+    
+    .content__box__speces1__ten
+     = @Electricalnamed
+     = @Electrical1d
+     = @Electrical2d
+    
+    .content__box__speces1__eleven
+     = @rentnamed
+     = @rent1d
+     = @rent2d
+    
+    .content__box__speces1__twelve
+     = @clothingnamed
+     = @clothing1d
+     = @clothing2d
+
+    .content__box__speces1__thirteen
+    = @hairnamed
+    = @hair1d
+    = @hair2d
+    
+    .content__box__speces1__fourteen
+     = @Entertainmentnamed
+     = @Entertainment1d
+     = @Entertainment2d
+    
+    .content__box__speces1__fifteen
+     = @insurancenamed
+     = @insurance1d
+     = @insurance2d
+    
+    .content__box__speces1__sixteen
+     = @cardnamed
+     = @card1d
+     = @card2d
+    
+    .content__box__speces1__seventeen
+     = @othernamed
+     = @other1d
+     = @other2d
