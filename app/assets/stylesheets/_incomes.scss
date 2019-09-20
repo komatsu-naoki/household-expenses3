@@ -7,8 +7,8 @@
   display: flex;
   font-family: 'Lobster', cursive;
   -webkit-text-stroke: 3px white;
-  border: solid;
-  background-image: url("/images/KAI428022_TP_V.jpg");
+  // border: solid;
+  // background-image: url("/images/KAI428022_TP_V.jpg");
   &__name1{
   height: 175px;
   font-size: 140px;
@@ -40,8 +40,8 @@
   display: flex;
   font-family: 'Lobster', cursive;
   -webkit-text-stroke: 3px white;
-  border: solid;
-  background-image: url("/images/KAI428022_TP_V.jpg");
+  // border: solid;
+  // background-image: url("/images/KAI428022_TP_V.jpg");
   &__name2{
   height: 175px;
   font-size: 120px;
@@ -158,6 +158,6 @@
    font-size: 25px;
    background-image: url("/images/f2242df28114ca0770282ad502cba384_t.jpeg");
    border: outset 4px white;
-   margin-bottom: 60px;
- }
+   margin-bottom: 200px;
+ }   
 }
