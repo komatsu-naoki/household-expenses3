@@ -5,7 +5,14 @@ class MeetingsController < ApplicationController
   # # GET /meetings.json
   def index
     @meetings = Meeting.all
-    
+    @meeting = Meeting.new
+    @day = params[:id].to_s
+    @meeting1 = Spending.where(user_id: current_user.id).select("date")
+    @meeting1.each do |meet|
+      if meet.date == @day
+      @meeting3 = meet.date
+      end
+    end
   end
 
   # # GET /meetings/1
@@ -21,7 +28,8 @@ class MeetingsController < ApplicationController
     @meeting3 = meet.date
     end
   end
-  
+
+  # 支出の機能
     @food0d = Spending.where(name: "食費").where(user_id: current_user.id).where(date: @meeting3)
      @food3d = 0
      
@@ -193,8 +201,39 @@ class MeetingsController < ApplicationController
        @othernamed = spending_sum.name 
      end
 
-    
-    
+# 収入の機能
+
+@meeting5 = Income.where(user_id: current_user.id).select("date")
+@meeting5.each do |meet|
+  if meet.date == @day
+  @meeting6 = meet.date
+  end
+end
+
+
+
+@income4d = Income.where(name: "収入").where(user_id: current_user.id).where(date: @meeting6)
+@income7d = 0
+
+@income4d.each do |income_sum|
+  @income7d += income_sum.value.to_i
+  @income5d = @income7d 
+end
+
+@income4ed = Income.where(name: "収入e").where(user_id: current_user.id).where(date: @meeting6)
+   @income7ed = 0
+   
+   @income4ed.each do |income_sum| 
+     @income7ed += income_sum.value.to_i
+     @income5ed = @income7ed
+   end
+   
+  #  @meeting1.each do |meet|
+  #   if meet.date == @day
+      @incomesum = @income5d.to_i - @income5ed.to_i 
+  #   end
+  # end
+   
     
     
    

@@ -221,5 +221,17 @@ class MoneysController < ApplicationController
       @incomename1 = income_sum.name 
      end
     end
+
+    @income4e = Income.where(name: "収入e").where(created_at: @range).where(user_id: current_user.id)
+   @income7e = 0
+   
+   @income4e.each do |income_sum|
+    if @income4e 
+     @income7e += income_sum.value.to_i
+     @income5e = @income7e
+    end
+   end
+
+   @incomemonth = @income5.to_i - @income5e.to_i
   end
 end

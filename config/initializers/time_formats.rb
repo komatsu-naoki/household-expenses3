@@ -1,7 +1,7 @@
 d = Date.today
 week = %W(日 月 火 水 木 金 土)[d.wday]
-Time::DATE_FORMATS[:ymd] = ("%Y年%m月%d日(#{week})") 
-Date::DATE_FORMATS[:ymd] = ("%Y年%m月%d日(#{week})")
+Time::DATE_FORMATS[:ymd] = ("%Y年%-m月%-d日(#{week})") 
+Date::DATE_FORMATS[:ymd] = ("%Y年%-m月%-d日(#{week})")
 
 
 a = Date.current.beginning_of_month

@@ -31,19 +31,19 @@
   td{
     border: 1px solid #1f0303;
   }
-  .wday-0 {}
-  .wday-1 {}
-  .wday-2 {}
-  .wday-3 {}
-  .wday-4 {}
-  .wday-5 {}
-  .wday-6 {}
+  // .wday-0 {}
+  // .wday-1 {}
+  // .wday-2 {}
+  // .wday-3 {}
+  // .wday-4 {}
+  // .wday-5 {}
+  // .wday-6 {}
 
-  .today {}
-  .past {}
-  .future {}
+  // .today {}
+  // .past {}
+  // .future {}
 
-  .start-date {}
+  // .start-date {}
 
   .prev-month {
    background-color: #ffffff00;
@@ -51,7 +51,36 @@
   .next-month { 
     background-color: #ffffff00
   }
-  .current-month {}
+  // .current-month {}
 
-  .has-events {}
+  // .has-events {}
+}
+
+.content__box__speces3{
+  border: solid 1px black;
+  height: 400px;
+  width: 89%;
+  margin: auto;
+  overflow: scroll;
+  background-color: white;
+  &__income{
+    font-size: 30px;
+    margin-left: 25px;
+    margin-top: 10px;
+    white-space: nowrap;
+    // &__line{
+      
+    // }
+  }
+}
+
+.content__box__income__in1{
+ font-size: 70px;
+ margin: auto;
+}
+
+.content__form{
+ 
+  width: 60vw;
+  height: 100px;
 }

@@ -119,9 +119,17 @@
   .content__box__speces2
    .content__box__speces2__income
     .content__box__speces2__line
-     収入
-     = @income5.to_i - @income5e.to_i
-     円
+     - if 0 <= @incomesum1
+      収入
+      = @incomesum1
+      円
+     - elsif @incomesum1 < 0
+      ※収入エラーです。※
+      %br
+      Incomeで収入を
+      %br
+      = -@incomesum1
+      円追加して下さい
 
    .content__box__speces2__balance
     .content__box__speces2__one

@@ -802,7 +802,7 @@ class HomesController < ApplicationController
   @ot1 = @other5.to_i - @other7e.to_i 
   @ot2 = @ot1 - @other3b.to_i
 
-    
+  @incomesum1 = @income5.to_i - @income5e.to_i 
     
 
    end

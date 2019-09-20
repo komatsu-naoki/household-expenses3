@@ -27,7 +27,7 @@ ActiveRecord::Schema.define(version: 20190919045412) do
     t.string   "name",       null: false
     t.string   "value",      null: false
     t.integer  "user_id"
-    t.datetime "date"
+    t.string   "date"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["user_id"], name: "index_incomes_on_user_id", using: :btree
