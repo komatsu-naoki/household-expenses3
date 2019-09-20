@@ -123,7 +123,7 @@
   .content__box__speces2
    .content__box__speces2__income
     .content__box__speces2__line
-     - if 0 <= @incomesum1
+     - if 0 < @incomesum1
       収入
       = @incomesum1
       円
@@ -131,9 +131,10 @@
       ※収入エラーです。※
       %br
       Incomeで収入を
-      %br
       = -@incomesum1
-      円追加して下さい
+      円
+      %br
+      追加して下さい
 
    .content__box__speces2__balance
     .content__box__speces2__one
