@@ -37,12 +37,10 @@ ActiveRecord::Schema.define(version: 20190919045412) do
     t.string   "name"
     t.datetime "start_time"
     t.integer  "home_id"
-    t.integer  "spending_id"
     t.integer  "user_id"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
     t.index ["home_id"], name: "index_meetings_on_home_id", using: :btree
-    t.index ["spending_id"], name: "index_meetings_on_spending_id", using: :btree
     t.index ["user_id"], name: "index_meetings_on_user_id", using: :btree
   end
 
@@ -85,7 +83,6 @@ ActiveRecord::Schema.define(version: 20190919045412) do
   add_foreign_key "homes", "spendings"
   add_foreign_key "homes", "users"
   add_foreign_key "incomes", "users"
-  add_foreign_key "meetings", "spendings"
   add_foreign_key "meetings", "users"
   add_foreign_key "money", "incomes"
   add_foreign_key "money", "spendings"

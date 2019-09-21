@@ -281,13 +281,26 @@ end
 
   # # DELETE /meetings/1
   # # DELETE /meetings/1.json
-  # def destroy
-  #   @meeting.destroy
-  #   respond_to do |format|
-  #     format.html { redirect_to meetings_url, notice: 'Meeting was successfully destroyed.' }
-  #     format.json { head :no_content }
-  #   end
-  # end
+  def destroy
+    @day = params[:id].to_s
+    @meeting1 = Spending.where(user_id: current_user.id).select("date")
+  @meeting1.each do |meet|
+    @meeting3 = meet.date
+  end
+    @spend = Spending.find(params[:id])
+    @spend.destroy
+    redirect_to "/meetings/#{@meeting3}"
+
+    
+
+    
+
+
+    # respond_to do |format|
+    #   format.html { redirect_to meetings_url, notice: 'Meeting was successfully destroyed.' }
+    #   format.json { head :no_content }
+    # end
+  end
 
   private
   #   # Use callbacks to share common setup or constraints between actions.
