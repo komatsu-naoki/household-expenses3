@@ -115,10 +115,10 @@
     )
    .content__box__total__income
     .content__box__total__income__1
-     - if 0 <= @incomemonth
-      収入
+     - if 0 < @incomemonth 
+      = @incomename1
       = @incomemonth
-      円
+      = @income6
      - elsif @incomemonth < 0
       収入エラーです。
       %br

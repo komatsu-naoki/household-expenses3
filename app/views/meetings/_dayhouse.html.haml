@@ -139,7 +139,7 @@
    .content__box__speces3__income
     .content__box__speces3__income__line
      - if @meeting6 == @day
-      - if 0 <= @incomesum.to_i
+      - if 0 < @incomesum.to_i
        収入
        = @incomesum.to_i
        円
