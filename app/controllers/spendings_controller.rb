@@ -11,7 +11,7 @@ class SpendingsController < ApplicationController
   def create
     
     @spending = Spending.new(spending_params)
-    @spending.users << current_user
+    # @spending.users << current_user
     
     
 
