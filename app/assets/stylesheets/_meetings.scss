@@ -65,27 +65,46 @@
 }
 
 .content__box__speces3{
-  border: solid 1px white;
+   display: flex;
+  &__income{
+    border: solid 1px white;
   height: 400px;
-  width: 89%;
-  margin: auto;
+  width: 42%;
+  margin-left: 65px;
   overflow: scroll;
   background-color: white;
-  &__income{
+    &__line{
+      font-size: 30px;
+    margin-left: 25px;
+    margin-top: 10px;
+    white-space: nowrap;
+    }
+  }
+  &__spend{
+    border: solid 1px white;
+   height: 400px;
+   width: 42%;
+   margin-left: 55px;
+   overflow: scroll;
+   background-color: white;
+   &__line{
     font-size: 30px;
     margin-left: 25px;
     margin-top: 10px;
     white-space: nowrap;
-    // &__line{
-      
-    // }
+   }
   }
 }
 
 .content__box__income__in1{
- font-size: 70px;
- margin: auto;
+ font-size: 50px;
+ margin-left: 260px;
 }
+
+.content__box__income__in2{
+  font-size: 50px;
+  margin-left: 440px;
+ }
 
 .content__form{
  
